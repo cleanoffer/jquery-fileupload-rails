@@ -23,7 +23,7 @@
 #   folder 'renamed-folder', 'spec'
 # end
 
-from 'https://github.com/blueimp/jQuery-File-Upload.git', tag: '7.4.1' do
+from 'https://github.com/blueimp/jQuery-File-Upload.git', tag: '9.5.7' do
   file 'vendor/assets/stylesheets/jquery.fileupload-ui.scss', 'css/jquery.fileupload-ui.css' do |path|
     rewrite(path) { |content| content.gsub(%r{url\(\.\./img/(.+)\)}, "image-url('\\1')")}
   end
